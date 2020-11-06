@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    >
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:textColor="@color/color2"-->
+<!--        android:textFontWeight="@android:integer/config_longAnimTime"-->
+<!--        android:textSize="30sp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/edit_title_text1"-->
+<!--        ></TextView>-->
+    <LinearLayout
+        android:id="@+id/amend_time_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/time"
+            ></TextView>
+        <TextView
+            android:id="@+id/amend_title_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="viewEnd"
+            android:hint="@string/edit_title_time_hint"
+            android:gravity="end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headLayout"
+        android:orientation="horizontal"
+        >
+<!--        title-->
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_tile"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/amend_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="start"
+            ></EditText>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <EditText
+            android:id="@+id/amend_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_back"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:background="@null"
+            android:hint="@string/edit_body_hint"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/button_back"
+            android:textColor="@color/color2"
+            android:textSize="40sp"
+            android:theme="@style/RippleWhite"
+            android:background="@drawable/button"
+
+
+            />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_save"
+            android:textColor="@color/color2"
+            android:theme="@style/RippleWhite"
+            android:background="@drawable/button"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/btn_amend_menu"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            />
+        <Button
+            android:id="@+id/btn_amend_menu_notice"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:text="@string/str_notice"
+            android:textSize="25sp"
+            android:theme="@style/RippleWhite"
+            android:background="@drawable/button"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">日记本</string>
+    <string name="title_name">日记本</string>
+    <string name="create_button_name">+</string>
+    <string name="group">↻</string>
+    <string name="text_tile">📝</string>
+    <string name="edit_hint">请输入标题</string>
+    <string name="button_back">◁</string>
+    <string name="button_save">√</string>
+    <string name="edit_body_hint">请输入内容...</string>
+    <string name="edit_title_time_hint">这里显示时间</string>
+    <string name="time">📅</string>
+    <string name="str_notice">⏰</string>
+    <string name="other_operation">其他选项：</string>
+    <string name="clock">🔨</string>
+    <string name="clock1">✖</string>
+    <string name="fenzu">▤</string>
+</resources>
